@@ -5,7 +5,7 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   // Сгенерированное из спецификации не правится и не линтуется
-  { ignores: ["dist", "node_modules", "web/src/client", "server/src/generated", "spec/generated"] },
+  { ignores: ["dist", "node_modules", ".claude", "web/src/client", "server/src/generated", "spec/generated"] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
